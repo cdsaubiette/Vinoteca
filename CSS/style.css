@@ -60,6 +60,10 @@ img, video, iframe {
 
 }
 
+.footer img{
+    border-radius: 20px;
+}
+
 .footer a{
     display: flex;
     justify-content: center;
@@ -166,6 +170,10 @@ main{
 .section3__item{
     margin-left: 20px;
     
+    
+}
+.section3__item img{
+    border-radius: 20px;
 }
 
 .section3__lista{
