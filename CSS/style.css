@@ -1,0 +1,188 @@
+/* selector universal */
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:rgb(180, 178, 178);
+    font-family: 'Cabin', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../VINOTECA/distorted-sun@3000x2000px.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+a {
+    color: inherit
+}
+
+img, video, iframe {
+    max-width: 100%;
+    height: auto;
+}
+ /* hacia arriba lo general y compartido*/
+
+ /*hacia abajo las clases*/
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    height: 400px;
+}
+
+.header, main, footer{
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.main{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px ;
+
+
+}
+
+.footer{
+    height: 250px;
+    display: flex; /*obligatorio cuando queremos usar Flexbox, esto va en el padre directo para mover a los hijos*/
+    flex-direction: column; /*aplica el eje principal*/
+    justify-content: space-evenly; /*controla el eje principal horizontal dependiendo de flex direction*/
+    align-items:center; /*controla el eje secundario dependiendo de flex direction; seria LO CONTRARIO*/
+
+}
+
+.footer a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: ease-in;
+    transition-duration: 0.5s;
+    transition-delay: .3s;
+    border-radius: 5PX;
+    background-color:antiquewhite;
+    width: 200PX;
+    height: 20px;
+    text-transform: uppercase;
+    text-decoration: solid;
+    margin-top: 15px;
+}
+
+.footer a:hover{
+    background-color: rgb(211, 9, 144);
+    transition: ease-out;
+}
+
+.header__logo{
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: auto;   
+    border-radius: 50%;
+}
+
+
+
+.header__titulo{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing:3px;
+}
+
+.header__descripcion{
+    text-align: center;
+    font-style: italic;
+}
+
+main{
+    text-align: center;
+}
+
+.section1{
+    height: 160px;
+}
+
+.section1__item{
+   list-style-type:none;
+   background-color: blueviolet;
+   border-radius: 5px;
+}
+
+.section1__lista{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    
+}
+.section1__enlace{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    transition: ease-in;
+    transition-duration: 0.5s;
+    transition-delay: .3s;
+    border-radius: 5PX;
+    background-color:antiquewhite;
+    width: 500PX;
+    text-transform: uppercase;
+    text-decoration: solid;
+}
+
+
+.section1__enlace:hover{
+    background-color: rgb(211, 9, 144);
+    transition: ease-out;
+}
+
+
+.section2{
+    padding: 1rem;
+}
+.section2__mapa{
+    border-radius: 1rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    
+}
+
+.section3{
+    padding: 1rem;
+}
+
+.section3__item{
+    margin-left: 20px;
+    
+}
+
+.section3__lista{
+   
+    list-style-type: none;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+
+}
+
+.section4{
+    padding: 1rem;
+}
+
+.section4__video{
+    border-radius: 1rem;
+    width: 40%;
+}
+
